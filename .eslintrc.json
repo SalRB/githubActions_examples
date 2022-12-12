@@ -1,11 +1,9 @@
 {
-  // "extends": "standard",
+  "extends": "standard",
   "rules": {
     "semi": [2, "always"],
     "quotes": ["error", "double"]
-  },
-  "parser": "@babel/eslint-parser"
-
+  }
 }
 
 
