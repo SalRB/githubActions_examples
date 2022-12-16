@@ -3,7 +3,7 @@ let express = require('express')
 let app = express()
 
 app.get('/', (req, res) => {
-  res.send('Servidor node para actions');
+  res.send('Servidor node para actions.');
 })
 
 app.listen(port, () => {
