@@ -42,11 +42,12 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
-          subject: Github Actions job result
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          to: obiwan@example.com,yoda@example.com
-          from: Luke Skywalker # <user@example.com>
+          to: salroiba03@gmail.com
+          from: Salva
+          subject: Github Actions job result
+          body: Mensaje enviado
 
   environment_test_execution:
     runs-on: ubuntu-latest
