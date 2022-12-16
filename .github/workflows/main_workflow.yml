@@ -43,7 +43,7 @@ jobs:
     steps:
       - name: Checkout code
         id: Hola
-        uses: actions/github-actions-hello@v1.0
+        uses: adeloyedeji/github-actions-hello@v1.0
         with:
           who-to-greet: 'Pepe'
         
