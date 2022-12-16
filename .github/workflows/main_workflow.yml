@@ -4,6 +4,7 @@ on:
     branches:
       - nodejs_jest_job
       - nodejs_linter_job
+      - nodejs_nodeversions_job
 jobs:
   linter-execution:
     runs-on: ubuntu-latest
