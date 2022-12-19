@@ -4,7 +4,7 @@ on:
     branches:
       - react_app_deploy
 jobs:
-  Build job:
+  Build-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -15,11 +15,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: carpeta
-          path: dist/
+          path: build/
 
-  Deploy job:
+  Deploy-job:
     runs-on: ubuntu-latest
-    needs: Build job
+    needs: Build-job
     steps:
       - name: Upload-Artifact
         uses: actions/download-artifact@v2
