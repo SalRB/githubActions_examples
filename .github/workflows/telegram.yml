@@ -1,0 +1,17 @@
+name: primer-ejemplo
+on:
+  push:
+    branches:
+      - send_telegram_action
+jobs:
+  send_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Bot
+        uses: ./.github/actions/custom
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          USERNAME: "Salva"
