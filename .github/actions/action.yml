@@ -1,4 +1,4 @@
 name: "Custom action"
 runs: 
-  using: "node13"
+  using: node16
   main: index.js
